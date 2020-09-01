@@ -1,10 +1,16 @@
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
-Welcome to Rahul Chauhan
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class phone extends Model
+{
+    protected $fillable = [];
+
+
+    public function user(){
+       return $this->belongsTo[User::class];
+    }
+
+}
